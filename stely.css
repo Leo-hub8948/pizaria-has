@@ -250,3 +250,63 @@ section {
     color: black;
 }
 
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr)); /*Cria colunas flexiveis com largura miníma 30rem e máxima proporcinal*/
+    gap: 1.5rem;
+}
+
+.box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+.box .icons a ion-icon {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    font-size: 1.7rem;
+    border: var(--border);
+    color: #fff;
+    margin: 0.3rem;
+}
+
+.box .icons a ion-icon:hover {
+    background: var(--main-color);
+}
+
+.box .image {
+    padding: 2.5rem 0;
+}
+
+.box image img {
+    height: 25rem;
+}
+
+.products .box .content {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.products .box .content .star ion-icon {
+    font-size: 1.9rem;
+    color: var(--main-color);
+}
+
+.box .content .price {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.box .content .price span {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+}
+
+.review .box-container {
+    display: grid;
+    text-align: center;
+    padding: ;
+}
